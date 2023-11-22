@@ -1,4 +1,16 @@
 <style>
+/** mobile **/
+@media (max-width: 639px){
+  ._kf_star_hospital {
+    font-size: 16px;
+  }
+}
+/** desktop **/
+@media(min-width: 640px){
+  ._kf_star_hospital {
+    font-size: 20px;
+  }
+}
 ._kf_star_hospital {
   font-family: Arial, sans-serif;
 }
@@ -13,12 +25,16 @@
   background-position: calc(100% - 0.75em) center;
   background-repeat: no-repeat;
   background-size: 64px;
+  font-size: inherit;
 }
 ._kf_star_hospital select {
   padding: 0.75em 1.25em;
   background-color: #fff;
   border: 1px solid #333;
   border-radius: 3px;
+  font-size: inherit;
+  height: 3em;
+  max-width: 100%;
 }
 </style>
 <div class="_kf_star_hospital">
