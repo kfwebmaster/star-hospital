@@ -1,14 +1,12 @@
 <style>
+/** default: desktop **/
+._kf_star_hospital {
+  font-size: 20px;
+}
 /** mobile **/
-@media (max-width: 639px){
+@media (max-device-width: 640px) {
   ._kf_star_hospital {
     font-size: 16px;
-  }
-}
-/** desktop **/
-@media(min-width: 640px){
-  ._kf_star_hospital {
-    font-size: 20px;
   }
 }
 ._kf_star_hospital {
@@ -18,14 +16,14 @@
   background-color: #ff5b24;
   color: #fff;
   border-radius: 100px;
-  padding: 0.75em 1.25em;
-  padding-right: calc(64px + 0.75em);
   border: 0;
   background-image: url('https://nettbutikk.kreftforeningen.no/content/uploads/2023/11/vipps-logo.png');
   background-position: calc(100% - 0.75em) center;
   background-repeat: no-repeat;
-  background-size: 64px;
   font-size: inherit;
+  padding: 0.75em 1.25em;
+  background-size: 4em;
+  padding-right: 4.5em;
 }
 ._kf_star_hospital select {
   padding: 0.75em 1.25em;
@@ -93,8 +91,8 @@
 			<option value="befab1b0">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset Innlandet - Gjøvik</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Hamar">
-			<option value="f475a56e">&nbsp;&nbsp;&nbsp;&nbsp;Prestrudsenteret Hamar kommune</option>
 			<option value="21f8a124">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset Innlandet - Hamar</option>
+			<option value="f475a56e">&nbsp;&nbsp;&nbsp;&nbsp;Prestrudsenteret Hamar kommune</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Lillehammer">
 			<option value="882eb659">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset Innlandet - Lillehammer</option>
@@ -103,9 +101,9 @@
 			<option value="5ad183a6">&nbsp;&nbsp;&nbsp;&nbsp;Valdres Lokalmedisinske senter</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Ringsaker">
+			<option value="93d66c96">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset Innlandet - Brumunddal</option>
 			<option value="6b7a98dc">&nbsp;&nbsp;&nbsp;&nbsp;Kommunalmedisinsk senter Ringsaker</option>
 			<option value="22de2590">&nbsp;&nbsp;&nbsp;&nbsp;Montebellosenteret</option>
-			<option value="93d66c96">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset Innlandet - Brumunddal</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Søndre Land">
 			<option value="dd5fe7a4">&nbsp;&nbsp;&nbsp;&nbsp;Unicare Landaasen</option>
@@ -160,19 +158,18 @@
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Haugesund">
 			<option value="2b782d4e">&nbsp;&nbsp;&nbsp;&nbsp;Haugesund Sjukehus</option>
-			<option value="7d94cefd">&nbsp;&nbsp;&nbsp;&nbsp;Haugesund Sykehus Helse Fonna </option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Sandnes">
 			<option value="87288182">&nbsp;&nbsp;&nbsp;&nbsp;Åse Bo- og aktivitetssenter</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Stavanger">
+			<option value="fd23c912">&nbsp;&nbsp;&nbsp;&nbsp;Lervig Sykehjem</option>
+			<option value="d5e5c33e">&nbsp;&nbsp;&nbsp;&nbsp;Bergåstjern Sykehjem og omsorgsboliger</option>
+			<option value="583d7cb4">&nbsp;&nbsp;&nbsp;&nbsp;Boganes Sykehjem</option>
 			<option value="45e1baae">&nbsp;&nbsp;&nbsp;&nbsp;Helse Stavanger HF</option>
 			<option value="33fd3181">&nbsp;&nbsp;&nbsp;&nbsp;Stavanger Universitetssykehus</option>
 			<option value="33fd3181">&nbsp;&nbsp;&nbsp;&nbsp;SUS</option>
 			<option value="ec46b35c">&nbsp;&nbsp;&nbsp;&nbsp;Tasta sykehjem</option>
-			<option value="fd23c912">&nbsp;&nbsp;&nbsp;&nbsp;Lervig Sykehjem</option>
-			<option value="d5e5c33e">&nbsp;&nbsp;&nbsp;&nbsp;Bergåstjern Sykehjem og omsorgsboliger</option>
-			<option value="583d7cb4">&nbsp;&nbsp;&nbsp;&nbsp;Boganes Sykehjem</option>
 		</optgroup>
 	<optgroup label="Troms og Finnmark"></optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Hammerfest">
@@ -235,9 +232,9 @@
 			<option value="332a9afa">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset i Telemark, Skien sykehus</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Tønsberg">
+			<option value="864a0758">&nbsp;&nbsp;&nbsp;&nbsp;Nes sykehjem</option>
 			<option value="cda78885">&nbsp;&nbsp;&nbsp;&nbsp;Hogsnes helsehus (tidligere Træelborg sykehjem)</option>
 			<option value="ff622ef4">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset i Vestfold</option>
-			<option value="864a0758">&nbsp;&nbsp;&nbsp;&nbsp;Nes sykehjem</option>
 		</optgroup>
 	<optgroup label="Vestland"></optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Bergen">
@@ -249,6 +246,9 @@
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Stord">
 			<option value="a785dba5">&nbsp;&nbsp;&nbsp;&nbsp;Stord Sjukehus</option>
+		</optgroup>
+		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Ullensvang">
+			<option value="7d94cefd">&nbsp;&nbsp;&nbsp;&nbsp;Odda sjukehus</option>
 		</optgroup>
 	<optgroup label="Viken"></optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Asker">
@@ -267,13 +267,13 @@
 			<option value="071016f4">&nbsp;&nbsp;&nbsp;&nbsp;Akershus Universitetssykehus</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Moss">
-			<option value="130151ce">&nbsp;&nbsp;&nbsp;&nbsp;Peer Gynt Helsehus</option>
 			<option value="0abc4218">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset i Østfold - Moss</option>
+			<option value="130151ce">&nbsp;&nbsp;&nbsp;&nbsp;Peer Gynt Helsehus</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Ringerike">
+			<option value="ef583312">&nbsp;&nbsp;&nbsp;&nbsp;Austjord Behandlingssenter</option>
 			<option value="f2fffcdd">&nbsp;&nbsp;&nbsp;&nbsp;Heradsbygda Omsorgssenter</option>
 			<option value="8f73deb5">&nbsp;&nbsp;&nbsp;&nbsp;Ringerike sykehus</option>
-			<option value="ef583312">&nbsp;&nbsp;&nbsp;&nbsp;Austjord Behandlingssenter</option>
 		</optgroup>
 		<optgroup label="&nbsp;&nbsp;&nbsp;&nbsp;Sarpsborg">
 			<option value="fe862e4b">&nbsp;&nbsp;&nbsp;&nbsp;Sykehuset i Østfold - Kalnes</option>
